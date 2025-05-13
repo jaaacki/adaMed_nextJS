@@ -1,0 +1,1 @@
+# adaMed_nextJS
