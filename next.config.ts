@@ -1,8 +1,10 @@
 import type { NextConfig } from "next";
 
+const basePath = process.env.BASEPATH || "";
+
 const nextConfig: NextConfig = {
   /* Set the basePath to /nextjs */
-  basePath: process.env.BASEPATH,
+  basePath: basePath,
 
   redirects: async () => {
     return [

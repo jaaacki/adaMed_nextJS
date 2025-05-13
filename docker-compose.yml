@@ -1,39 +1,24 @@
-version: '3.8'
-
 services:
-  dreamspos:
+  adamed:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: dreamspos-app
+    container_name: adamed-app
     ports:
       - "3000:3000"
     environment:
       - NODE_ENV=production
-      - BASEPATH=${BASEPATH:-""}
+      - ENV BASEPATH=
+      - NPM_CONFIG_LEGACY_PEER_DEPS=true
     restart: unless-stopped
     # Add volumes if you need to persist data
     # volumes:
     #   - ./data:/app/data
     networks:
-      - dreamspos-network
-
-# For development environment, you might want to add services like a database
-# Example:
-#   db:
-#     image: postgres:14
-#     container_name: dreamspos-db
-#     environment:
-#       - POSTGRES_USER=postgres
-#       - POSTGRES_PASSWORD=postgres
-#       - POSTGRES_DB=dreamspos
-#     volumes:
-#       - postgres_data:/var/lib/postgresql/data
-#     networks:
-#       - dreamspos-network
+      - adamed-network
 
 networks:
-  dreamspos-network:
+  adamed-network:
     driver: bridge
 
 # volumes:
