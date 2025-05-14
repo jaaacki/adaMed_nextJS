@@ -4,11 +4,11 @@ import PredefinedDateRanges from "@/core/common/daterangepicker/datePicker";
 import CommonFooter from "@/core/common/footer/commonFooter";
 import { all_routes } from "@/data/all_routes";
 import Link from "next/link";
-import SalesDayChart from "../charts/salesdaychart";
-import CustomerChart from "../charts/customerchart";
-import SalesStatisticsChart from "../charts/salesstatisticschart";
-import TopCategoryChart from "../charts/topcategory";
-import HeatmapChart from "../charts/heartchat";
+import SalesDayChart from "../../components/charts/salesdaychart";
+import CustomerChart from "../../components/charts/customerchart";
+import SalesStatisticsChart from "../../components/charts/salesstatisticschart";
+import TopCategoryChart from "../../components/charts/topcategory";
+import HeatmapChart from "../../components/charts/heartchat";
 
 export default function NewDashboard() {
     const route = all_routes

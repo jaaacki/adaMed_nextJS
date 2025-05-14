@@ -1,4 +1,4 @@
-import NewDashboard from "@/components/dashboards/newdashboard";
+import NewDashboard from "@/app/(dashboard)/newdashboard";
 
 
 export default function Index(){

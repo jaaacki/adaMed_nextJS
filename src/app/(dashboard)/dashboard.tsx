@@ -4,7 +4,7 @@ import Link from "next/link";
 import CountUp from "react-countup";
 import { User, UserCheck, ArrowRight, File } from "feather-icons-react";
 import { all_routes } from "@/data/all_routes";
-import SalesStatisticsChart from "../charts/salesstatisticschart";
+import SalesStatisticsChart from "../../components/charts/salesstatisticschart";
 
 export default function Admindashboard() {
     const route = all_routes
