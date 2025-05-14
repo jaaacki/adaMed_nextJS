@@ -1,4 +1,4 @@
-import NewDashboard from "@/app/(dashboard)/newdashboard";
+import NewDashboard from "@/components/dashboards/newdashboard";
 
 export default function BoxedComponent() {
   return (

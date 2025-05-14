@@ -1,4 +1,4 @@
-import Admindashboard from "@/app/(dashboard)/dashboard";
+import Admindashboard from "@/components/dashboards/dashboard";
 
 export default function Dashboard(){
     return (

@@ -7,7 +7,7 @@ import RefreshIcon from "@/core/common/tooltip-content/refresh";
 import { all_routes } from "@/data/all_routes";
 import { Calendar, ChevronUp, Clock, RotateCcw } from "feather-icons-react";
 import Link from "next/dist/client/link";
-import SalesAnalysisChart from "../../components/charts/salesanalysis";
+import SalesAnalysisChart from "../charts/salesanalysis";
 
 export default function Salesdashboard() {
   const route = all_routes;

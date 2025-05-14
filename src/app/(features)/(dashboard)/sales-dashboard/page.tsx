@@ -1,4 +1,4 @@
-import Salesdashboard from "@/app/(dashboard)/saledashboard";
+import Salesdashboard from "@/components/dashboards/saledashboard";
 
 export default function SalesDashboard(){
     return (
